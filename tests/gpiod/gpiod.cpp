@@ -11,7 +11,7 @@ const int pin = 17;
 
 int main(void)
 {
-    gpiod::chip chip ("gpiodchip0");
+    gpiod::chip chip ("gpiochip0");
     auto line = chip.get_line(pin);
     line.request({"test",
                   gpiod::line_request::DIRECTION_OUTPUT,
